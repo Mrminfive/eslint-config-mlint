@@ -1,6 +1,8 @@
-# eslint-config-mfe
+# eslint-config-mlint
 
 [![Build Status](https://travis-ci.org/Mrminfive/eslint-config-mlint.svg?branch=master)](https://travis-ci.org/Mrminfive/eslint-config-mlint)
+
+[![NPM](https://nodei.co/npm/eslint-config-mlint.png)](https://nodei.co/npm/eslint-config-mlint/)
 
 > ESLint Config for JavaScript
 
