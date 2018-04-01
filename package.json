@@ -1,14 +1,11 @@
 {
-  "name": "eslint-config-mfe",
+  "name": "eslint-config-mlint",
   "version": "1.0.0",
   "description": "ESLint Config for JavaScript",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mrminfive/eslint-config-mfe.git"
+    "url": "git+https://github.com/Mrminfive/eslint-config-mlint.git"
   },
   "keywords": [
     "eslint",
@@ -20,9 +17,9 @@
   "author": "minfive <chenxiaowu1994@outlook.com> (http://blog.minfive.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mrminfive/eslint-config-mfe/issues"
+    "url": "https://github.com/Mrminfive/eslint-config-mlint/issues"
   },
-  "homepage": "https://github.com/Mrminfive/eslint-config-mfe#readme",
+  "homepage": "https://github.com/Mrminfive/eslint-config-mlint#readme",
   "peerDependencies": {
     "eslint": "^4.19.1",
     "babel-eslint": "^8.2.2"
