@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mlint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint Config for JavaScript",
   "main": "index.js",
   "repository": {

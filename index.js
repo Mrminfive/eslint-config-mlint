@@ -14,12 +14,5 @@ module.exports = {
         }
     },
 
-    env: {
-        browser: true,
-        node: true,
-        es6: true,
-        commonjs: true
-    },
-    
-    rules: require('./rules.js')
+    extends: ['./rules.js']
 };
