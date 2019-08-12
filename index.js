@@ -1,18 +1,9 @@
-
 module.exports = {
-    root: true,
-
-    parser: 'babel-eslint',
+    extends: [
+        './es6'
+    ].map(require.resolve),
 
     parserOptions: {
-        ecmaVersion: 8,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-            experimentalObjectRestSpread: true,
-            modules: true
-        }
-    },
-
-    extends: ['./rules.js']
-};
+        ecmaVersion: 2019
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "minfive <chenxiaowu1994@outlook.com> (http://blog.minfive.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1"
+  }
+}

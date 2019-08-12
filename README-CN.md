@@ -4,19 +4,19 @@
 
 [![NPM](https://nodei.co/npm/eslint-config-mlint.png)](https://nodei.co/npm/eslint-config-mlint/)
 
-English | [简体中文](./README-CN.md)
+[English](./README.md) | 简体中文
 
-> ESLint Config for JavaScript、Typescript、Vue、React、Prettier
+> JavaScript、Typescript、Vue、React、Prettier 的 ESLint Config
 
-## Installation
+## 安装
 
-Least dependence：
+基本依赖：
 
 ``` shell
 $ npm install --save-dev eslint eslint-config-mlint eslint-plugin-import@^2.18.0
 ```
 
-For the following types of projects, you also need to install these dependencies.
+对于以下类型的项目，还需要安装这些依赖项：
 
 ### Typescript
 
@@ -44,20 +44,20 @@ $ npm install --save-dev prettier@^1.18.2 eslint-config-prettier@^6.0.0
 
 ## Usage
 
-Once the `eslint-config-mlint` package is installed, you can use it by specifying `mlint` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+一旦安装了 `eslint-config-mlint` 包，就可以通过在 [ESLint 配置](http://eslint.org/docs/user-guide/configuring) 的 [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) 部分指定`mlint` 来使用它。
 
 ```js
 {
-  'extends': 'eslint-config-mlint',
+  'extends': 'mlint',
   'rules': {
     // Additional, per-project rules...
   }
 }
 ```
 
-This package provides configuration for 9 different project types.
+该包提供 9 种不同项目类型的配置。
 
-### For Es5
+### 对于 Es5 项目
 
 ``` js
 {
@@ -65,9 +65,9 @@ This package provides configuration for 9 different project types.
 }
 ```
 
-This configuration is for older projects that use ES5 and previous versions of JS, all using ESLint native rules.
+这份配置针对使用 ES5 及之前版本 JS 的老项目，全部使用 ESLint 原生规则。
 
-### For Es6
+### 对于 Es6 项目
 
 ``` js
 {
@@ -75,9 +75,9 @@ This configuration is for older projects that use ES5 and previous versions of J
 }
 ```
 
-This configuration is for ES6 projects, using ESLint native rules and some of the rules of the [eslint-plugin-import][EslintPluginImport] plugin.
+这份配置针对 ES6 项目，使用 ESLint 原生规则和部分 [eslint-plugin-import][EslintPluginImport] 插件的规则。
 
-### For Typescript
+### 对于 Typescript 项目
 
 ``` js
 {
@@ -85,9 +85,9 @@ This configuration is for ES6 projects, using ESLint native rules and some of th
 }
 ```
 
-This configuration for Typescript projects inherits the above configuration of the ES6 project and enables some of the rules for the [@typescript-eslint/eslint-plugin][EslintPluginTypescript] plugin, using [@typescript-eslint/parser][EslintParserTypescript] as the parser.
+这份配置针对 Typescript 的项目，继承了上面对 ES6 项目的配置，并启用了部分 [@typescript-eslint/eslint-plugin][EslintPluginTypescript] 插件的规则，使用 [@typescript-eslint/parser][EslintParserTypescript] 作为 parser。
 
-### For Vue
+### 对于 Vue 项目
 
 ``` js
 {
@@ -95,9 +95,9 @@ This configuration for Typescript projects inherits the above configuration of t
 }
 ```
 
-This configuration is for Vue's project, inherits the above configuration of the ES6 project, and enables some of the rules of the [eslint-plugin-vue][EslintPluginVue] plugin, using [vue-eslint-parser][VueEslintParser] as the parser.
+这份配置针对 Vue 的项目，继承了上面对 ES6 项目的配置，并启用了部分 [eslint-plugin-vue][EslintPluginVue] 插件的规则，使用 [vue-eslint-parser][VueEslintParser] 作为 parser。
 
-### For React
+### 对于 React 项目
 
 ``` js
 {
@@ -105,9 +105,9 @@ This configuration is for Vue's project, inherits the above configuration of the
 }
 ```
 
-This configuration for React projects inherits the above configuration of the ES6 project and enables some of the rules for the [eslint-plugin-react][EslintPluginReact] and [eslint-plugin-react-hooks][EslintPluginReactHooks] plugins.
+这份配置针对 React 的项目，继承了上面对 ES6 项目的配置，并启用了部分 [eslint-plugin-react][EslintPluginReact] 和 [eslint-plugin-react-hooks][EslintPluginReactHooks] 插件的规则。
 
-### For Typescript + Vue
+### 对于 Typescript + Vue 项目
 
 ``` js
 {
@@ -115,9 +115,9 @@ This configuration for React projects inherits the above configuration of the ES
 }
 ```
 
-This configuration for Vue + Typescript projects inherits the above configuration for Vue projects and Typescript projects.
+这份配置针对 Vue + Typescript 的项目，继承了上面对 Vue 项目和 Typescript 项目的配置。
 
-### For Typescript + React
+### 对于 Typescript + React 项目
 
 ``` js
 {
@@ -125,9 +125,9 @@ This configuration for Vue + Typescript projects inherits the above configuratio
 }
 ```
 
-This configuration for React + Typescript projects inherits the above configuration for React projects and Typescript projects.
+这份配置针对 React + Typescript 的项目，继承了上面对 React 项目和 Typescript 项目的配置。
 
-### For Prettier + Typescript
+### 对于 Prettier + Typescript 项目
 
 ``` js
 {
@@ -135,10 +135,9 @@ This configuration for React + Typescript projects inherits the above configurat
 }
 ```
 
-This configuration for Prettier + Typescript projects inherits the above configuration of the Typescript project and inherits [eslint-config-prettier][EslintConfigPrettier] to disable partial conflict rules.
+这份配置正对 Prettier + Typescript 项目，继承了上面对于 Typescript 项目的配置，并继承了 [eslint-config-prettier][EslintConfigPrettier] 以禁用部分冲突的规则。
 
-
-### For Prettier + Typescript + Vue
+### 对于 Prettier + Typescript + Vue 项目
 
 ``` js
 {
@@ -146,11 +145,11 @@ This configuration for Prettier + Typescript projects inherits the above configu
 }
 ```
 
-This configuration for Prettier + Typescript + Vue projects inherits the above configuration of the Typescript + Vue project and inherits [eslint-config-prettier][EslintConfigPrettier] to disable partial conflict rules.
+这份配置正对 Prettier + Typescript + Vue 项目，继承了上面对于 Typescript + Vue 项目的配置，并继承了 [eslint-config-prettier][EslintConfigPrettier] 以禁用部分冲突的规则。
 
-## Editor integrations
+## 编辑器集成
 
-See example:
+参见例子:
 
 * [Es5](./__example__/es5/REAMDE.md)
 * [Es6](./__example__/es6/REAMDE.md)
@@ -163,7 +162,7 @@ See example:
 * [Prettier + Typescript + Vue](./__example__/prettier-typescript-vue/REAMDE.md)
 * [Prettier + Typescript + React](./__example__/prettier-typescript-react/REAMDE.md)
 
-## License
+## 执照
 
 MIT License
 

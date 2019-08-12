@@ -1,8 +1,12 @@
 {
   "name": "eslint-config-mlint",
   "version": "1.0.3",
-  "description": "ESLint Config for JavaScript",
+  "description": "ESLint Config for JavaScript or Typescript",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "mocha ./__test__/*.test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mrminfive/eslint-config-mlint.git"
@@ -12,7 +16,11 @@
     "eslintconfig",
     "style",
     "style checker",
-    "style linter"
+    "style linter",
+    "typescript",
+    "vue",
+    "react",
+    "prettier"
   ],
   "author": "minfive <chenxiaowu1994@outlook.com> (http://blog.minfive.com/)",
   "license": "MIT",
@@ -20,12 +28,32 @@
     "url": "https://github.com/Mrminfive/eslint-config-mlint/issues"
   },
   "homepage": "https://github.com/Mrminfive/eslint-config-mlint#readme",
-  "peerDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0"
+  "dependencies": {
+    "eslint-config-ali": "^7.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0"
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3",
+    "vue-eslint-parser": "^6.0.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3",
+    "vue-eslint-parser": "^6.0.4"
   }
 }

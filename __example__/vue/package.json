@@ -1,0 +1,14 @@
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "minfive <chenxiaowu1994@outlook.com> (http://blog.minfive.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}

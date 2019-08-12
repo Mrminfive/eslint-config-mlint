@@ -1,0 +1,12 @@
+{
+    // Set vue template indent
+    "vetur.format.options.tabSize": 4,
+
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        { "language": "javascript", "autoFix": true },
+        { "language": "typescript", "autoFix": true },
+        { "language": "vue", "autoFix": true },
+        { "language": "typescriptreact", "autoFix": true }
+    ]
+}

@@ -1,3 +1,11 @@
 module.exports = {
-    extends: './index.js'
-};
+    root: true,
+
+    extends: [
+        './index.js'
+    ],
+
+    env: {
+        mocha: true
+    }
+}

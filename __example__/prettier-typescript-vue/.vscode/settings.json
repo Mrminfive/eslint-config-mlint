@@ -1,0 +1,37 @@
+{
+    "files.associations": {
+        "*.vue": "vue"
+    },
+
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        { "language": "javascript", "autoFix": true },
+        { "language": "typescript", "autoFix": true },
+        { "language": "vue", "autoFix": true },
+        { "language": "typescriptreact", "autoFix": true }
+    ],
+
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+
+    "prettier.requireConfig": true,
+
+    "vetur.format.enable": true,
+    "vetur.format.defaultFormatterOptions": {
+        "prettyhtml": {
+            "tabWidth": 4,
+            "wrapAttributes": true
+        }
+    }
+}
