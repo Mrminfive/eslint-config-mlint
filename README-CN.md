@@ -12,7 +12,7 @@
 
 基本依赖：
 
-``` shell
+``` bash
 $ npm install --save-dev eslint eslint-config-mlint eslint-plugin-import@^2.18.0
 ```
 
@@ -20,26 +20,26 @@ $ npm install --save-dev eslint eslint-config-mlint eslint-plugin-import@^2.18.0
 
 ### Typescript
 
-``` shell
+``` bash
 $ npm install --save-dev @typescript-eslint/parser@^1.12.0 @typescript-eslint/eslint-plugin@^1.12.0 typescript@^3.5.3
 ```
 
 ### Vue
 
-``` shell
+``` bash
 $ npm install --save-dev eslint-plugin-vue@^5.2.3 vue-eslint-parser@^6.0.4
 ```
 
 ### React
 
-``` shell
+``` bash
 $ npm install --save-dev eslint-plugin-react@^7.4.0 eslint-plugin-react-hooks@^1.6.0
 ```
 
 ### Prettier
 
-``` shell
-$ npm install --save-dev prettier@^1.18.2 eslint-config-prettier@^6.0.0
+``` bash
+$ npm install --save-dev prettier@^1.18.2 eslint-config-prettier@^6.0.0 eslint-plugin-prettier^3.1.0
 ```
 
 ## Usage

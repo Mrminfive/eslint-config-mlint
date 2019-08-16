@@ -8,7 +8,12 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
 
     // 数组的定义方式（禁止使用泛型去定义数组）
-    '@typescript-eslint/array-type': ['error', 'array'],
+    '@typescript-eslint/array-type': ['error', {
+        default: 'array'
+    }],
+
+    // 不允许 await 不返回 promise 的函数
+    '@typescript-eslint/await-thenable': 'error',
 
     // 禁止使用 @ts-ignore（太过严苛，暂时关闭）
     '@typescript-eslint/ban-ts-ignore': 'off',
@@ -167,9 +172,6 @@ module.exports = {
         }
     ],
 
-    // 禁止使用 <Type> 进行断言
-    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
-
     // 不要使用 new Array() 和 Array() 创建数组，除非为了构造某一长度的空数组，或者使用泛型声明具体类型
     '@typescript-eslint/no-array-constructor': 'error',
 
@@ -225,8 +227,8 @@ module.exports = {
     // 禁止使用for-in循环遍历数组
     '@typescript-eslint/no-for-in-array': 'error',
 
-    // 对于初始化为数字，字符串或布尔值的变量或参数，禁止显式类型声明，使用类型推导
-    '@typescript-eslint/no-inferrable-types': 'error',
+    // 对于初始化为数字，字符串或布尔值的变量或参数，禁止显式类型声明，使用类型推导（关闭该规则，默认需要显性设置）
+    '@typescript-eslint/no-inferrable-types': 'off',
 
     // 禁用魔术数字
     '@typescript-eslint/no-magic-numbers': [
@@ -242,6 +244,9 @@ module.exports = {
     // 强制执行的有效的定义 new 和 constructor
     '@typescript-eslint/no-misused-new': 'error',
 
+    // 避免滥用 promise
+    '@typescript-eslint/no-misused-promises': 'error',
+
     // 禁止使用自定义 TypeScript module 和 namespace（这里开放在声明文件中使用）
     '@typescript-eslint/no-namespace': [
         'error',
@@ -253,9 +258,6 @@ module.exports = {
 
     // 禁止使用!后缀运算符来做非空断言
     '@typescript-eslint/no-non-null-assertion': 'error',
-
-    // 禁止对象类型断言
-    '@typescript-eslint/no-object-literal-type-assertion': 'error',
 
     // 禁止在类构造函数中使用参数属性
     '@typescript-eslint/no-parameter-properties': 'error',
@@ -276,6 +278,9 @@ module.exports = {
 
     // 在不需要名称空间限定符时发出警告
     '@typescript-eslint/no-unnecessary-qualifier': 'warn',
+
+    // 如果泛型类型变量为默认值时则不需要设置（关闭该规则，以保证更好的语意）
+    '@typescript-eslint/no-unnecessary-type-arguments': 'off',
 
     // 如果类型断言无法改变表达式的类型，则发出警告
     '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
@@ -361,6 +366,9 @@ module.exports = {
             ignoreStatic: true
         }
     ],
+
+    // 强制定义类型
+    '@typescript-eslint/typedef': 'error',
 
     // 当函数重载可以合并时提示
     '@typescript-eslint/unified-signatures': 'warn'
